@@ -1,0 +1,32 @@
+import React, { Component } from 'react';
+import logo from './logo.svg';
+import './App.css';
+
+function App() {
+  return (
+    <div className="App">
+      <header className="App-header">
+        <p>React js</p>
+        <Person></Person>
+        <Person></Person>
+        <Person></Person>
+
+      </header>
+    </div>
+  );
+}
+
+function Person(){
+  const personStyle={
+    border:"2px solid red",
+    margin:"10px",
+    padding:"10px"
+  }
+  return <div style={personStyle}>
+    <h1>Shakib khan</h1>
+    <h3>Hero of the year</h3>
+    </div>
+  
+}
+
+export default App;

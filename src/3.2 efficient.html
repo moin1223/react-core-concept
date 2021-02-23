@@ -1,0 +1,44 @@
+import React, { Component } from 'react';
+import logo from './logo.svg';
+import './App.css';
+
+function App() {
+
+  const products=[
+    {name:'photo', price:'$12'},
+    {name:'game', price:'$12'}
+  ]
+  return (
+    <div className="App">
+      <header className="App-header">
+        <p>React js</p>
+        
+        <Product product={products[0]}></Product>
+        <Product product={products[1]}></Product>
+       
+
+      </header>
+    </div>
+  );
+}
+
+function Product(props){
+  const productStyle={
+    border:"2px solid gray",
+    margin:"10px",
+    padding:"10px",
+    borderRadius:'5px',
+    height:"200px",
+    width:"200px",
+    float:"left"
+  }
+  const {name,price}=props.product;
+  return <div style={productStyle}>
+    <h2>{name}</h2>
+    <h3>{price}</h3>
+    <button>Bye naw</button>
+    </div>
+  
+}
+
+export default App;

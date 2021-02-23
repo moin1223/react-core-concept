@@ -1,0 +1,32 @@
+import React, { Component } from 'react';
+import logo from './logo.svg';
+import './App.css';
+
+function App() {
+  return (
+    <div className="App">
+      <header className="App-header">
+        <p>React js</p>
+        <Person nayok="Rubel" nayika="mousomi"></Person>
+        <Person nayok="shakib khan" nayika="mim"></Person>
+        <Person nayok="salman Shah" nayika="sabnur"></Person>
+
+      </header>
+    </div>
+  );
+}
+
+function Person(props){
+  const personStyle={
+    border:"2px solid red",
+    margin:"10px",
+    padding:"10px"
+  }
+  return <div style={personStyle}>
+    <h1>Naok:{props.nayok}</h1>
+    <h3>nayika{props.nayika}</h3>
+    </div>
+  
+}
+
+export default App;
